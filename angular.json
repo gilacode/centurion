@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -59,7 +59,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -138,6 +137,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "portal"
+    }
+  },
+  "defaultProject": "portal",
+  "cli": {
+    "analytics": "18fce84a-5f16-4c0f-b8e3-973b780948c7"
+  }
 }

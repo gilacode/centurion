@@ -41,7 +41,7 @@ const validateStep2: ValidateFn = (control: FormGroup): ValidationErrors | null 
 export class ScanRequestComponent implements OnInit, OnDestroy {
   @Input() flagBrowse: boolean;
   @ViewChild('stepper', { static: true }) stepper: MdbStepperComponent;
-  @ViewChild('tokenModal', {static: false}) tokenModal: MDBModalRef;
+  @ViewChild('tokenModal') tokenModal: MDBModalRef;
 
   handlerSubscribeProgLangForm;
   handlerSubscribeListAuthToken;

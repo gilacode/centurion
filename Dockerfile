@@ -5,8 +5,7 @@ FROM node:12 AS build
 WORKDIR /usr/src/app
 COPY package*.json ./
 COPY mdb-file-upload-8.3.1.tgz ./
-RUN npm i @angular-devkit/build-angular@0.803.24
-RUN npm install
+RUN npm install && npm audit fix
 COPY . .
 RUN npm run build
 ### STAGE 2: Run ###
